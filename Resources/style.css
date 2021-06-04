@@ -3,20 +3,34 @@ body {
     background-color: wheat;
     font-family: 'EB Garamond', serif;
     font-size: 16px;
+    max-width: 800px;
+    margin: auto;
 }
+
+/* Header */
 
 header {
     width: 100%;
+    background-color: rgb(235,235,235);
+}
+
+.flexcontainer {
     height: 50px;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-    justify-items: center;
     align-items: center;
-    background-color: rgb(235,235,235); 
+}
+
+.flexcontainer div {
+    flex-basis: 400px;
 }
 
 .logo {
-    margin-left: 10px;
+    flex-shrink: 2;
+}
+
+.menu {
+    flex-shrink: 2;
 }
 
 .logo img {
@@ -24,14 +38,29 @@ header {
     height: 45px;
     object-position: bottom;
     object-fit: cover;
+    margin-bottom: 5px;
 }
 
+.logo h1 {
+    font-size: 1rem;
+    color: darkslategray;
+    text-shadow: 2px 3px whitesmoke;
+    margin-left: 20px;
+    line-height: 15px;
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .logo h1 {
+    visibility: hidden;
+    }
+  }
+
 nav {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 ul {
-    width: fit-content;
     float: right;
 }
 
@@ -39,16 +68,67 @@ li {
     display: inline;
     list-style: none;
     margin-left: 10px;
-    color: orange;
+    color: darkslategray;
     font-size: 1.5rem;
     font-weight: 500;
-
 }
 
 li a {
-    color: orange;
+    color: darkslategray;
     text-decoration: none;
 }
-.banner {
-    background-image: url(./Imgs/daniel-romero-DPC8oN2IMcY-unsplash.jpg);
+
+/* Body */
+/* Container styles */
+
+.container {
+    width: 100%;
 }
+
+.vertical {
+    display: inline-flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.horizontal {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Main Banner */
+
+.banner {
+    background-image: url(./Imgs/kabo-RKDRI_LK9c0-unsplash.jpg);
+    width: 700px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: black;
+    opacity: 0.2;
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 1rem;
+    line-height: 4rem;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Product */
+
