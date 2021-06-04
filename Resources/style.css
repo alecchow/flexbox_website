@@ -112,7 +112,7 @@ li a {
     align-items: center;
 }
 
-.overlay {
+.banner .overlay {
     background-color: black;
     opacity: 0.2;
     width: 700px;
@@ -132,3 +132,64 @@ li a {
 
 /* Product */
 
+.list h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: darkslategray;
+    width: 700px;
+    margin: auto;
+}
+
+.products {
+    width: 600px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.product {
+    width: 250px;
+    height: 250px;
+    margin: 10px 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.product .overlay {
+    background-color: black;
+    opacity: 0.2;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+}
+
+.food {
+    background-image: url(./Imgs/anastasiia-rozumna-vi3yGOPBZSY-unsplash.jpg);
+}
+
+.drinks {
+    background-image: url(./Imgs/tuyen-vo-Q_kvnbfDqEc-unsplash.jpg);
+}
+
+.baby {
+    background-image: url(./Imgs/leah-hetteberg-7CT_GfGayLA-unsplash.jpg);
+}
+
+.hh {
+    background-image: url(./Imgs/litter-robot-Y4bbGaHkL6k-unsplash.jpg);
+}
