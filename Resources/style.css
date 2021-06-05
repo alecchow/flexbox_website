@@ -266,29 +266,31 @@ a {
 
 /* Footer */
 
-.footer {
-    margin: auto;
-    max-width: 100%;
+footer {
+    margin: 10px auto;
+    width: 100%;
     height: 130px;
+    text-align: left;
+    line-height: 1rem;
+}
+
+.footercontainer {
     background-color: rgb(235,235,235);
-    background-color: ;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
-/* Footer Menu */
-
-.bottommenu nav {
-    float: left;
+.footercontainer nav {
     margin-left: -50px;
+    padding-left: 10px;
 }
-
-/* Contact Us */
-
-.footer .textbox {
-    margin: -10px 0 0 0;
+.footercontainer .textbox {
     font-size: 0.8rem;
     font-weight: 500;
     color: salmon;
+    padding-left: 10px;
+}
+
+footer h3 {
+    padding-left: 10px;
 }
