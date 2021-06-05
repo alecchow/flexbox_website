@@ -92,9 +92,6 @@ li a {
 
 .container {
     width: 100%;
-}
-
-.horizontal {
     display: inline-flex;
     justify-content: center;
 }
@@ -183,7 +180,7 @@ li a {
 }
 
 .products {
-    width: 600px;
+    width: 700px;
     height: 280px;
     padding: 10px;
     display: flex;
@@ -194,7 +191,7 @@ li a {
 }
 
 .product {
-    width: 130px;
+    width: 140px;
     height: 260px;
     background-position: center;
     background-size: cover;
@@ -202,8 +199,8 @@ li a {
 
 .product .overlay {
     background-color: black;
-    opacity: 0.2;
-    width: 130px;
+    opacity: 0.3;
+    width: 140px;
     height: 260px;
     position: absolute;
     z-index: 1;
@@ -234,4 +231,51 @@ li a {
 
 .hh {
     background-image: url(./Imgs/litter-robot-Y4bbGaHkL6k-unsplash.jpg);
+}
+
+/* Team */
+
+.teambox {
+    margin: 50px auto;
+    width: 700px;
+    height: 370px;
+    background-color: whitesmoke;
+}
+
+.teambox h2 {
+    color: white;
+    background-color: lightslategray;
+}
+
+.team {
+    width: 700px;
+    height: 300px;
+    padding-top: 20px;
+    margin: auto;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.teammember img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.teammember {
+    text-align: center;
+    line-height: 1rem;
+}
+
+.teammember h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: salmon;
+}
+
+.teammember h4 {
+    font-size: 1rem;
+    color: salmon;
 }
