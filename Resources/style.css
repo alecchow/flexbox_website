@@ -1,9 +1,18 @@
 
 body {
-    background-color: wheat;
-    font-family: 'EB Garamond', serif;
+    background-color: lightgoldenrodyellow;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: salmon;
+    background-color: wheat;
+    width: 700px;
     margin: auto;
 }
 
@@ -42,12 +51,12 @@ header {
 }
 
 .logo h1 {
-    font-size: 1rem;
-    color: darkslategray;
+    font-size: 0.9rem;
+    color: salmon;
     text-shadow: 2px 3px whitesmoke;
     margin-left: 20px;
     line-height: 15px;
-    margin-top: -10px;
+    margin-top: -8px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -68,13 +77,13 @@ li {
     display: inline;
     list-style: none;
     margin-left: 10px;
-    color: darkslategray;
-    font-size: 1.5rem;
+    color: slategray;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
 li a {
-    color: darkslategray;
+    color: salmon;
     text-decoration: none;
 }
 
@@ -85,17 +94,9 @@ li a {
     width: 100%;
 }
 
-.vertical {
-    display: inline-flex;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
-}
-
 .horizontal {
     display: inline-flex;
     justify-content: center;
-    align-content: center;
 }
 
 /* Main Banner */
@@ -122,7 +123,7 @@ li a {
 }
 
 .banner h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 4rem;
     width: 100%;
     color: whitesmoke;
@@ -130,30 +131,71 @@ li a {
     z-index: 2;
 }
 
+/* About Us */
+
+.content {
+    margin: 30px auto;
+    width: 700px;
+    background-color: lightslategrey;
+}
+
+.content .textbox {
+    width: fit-content;
+    margin:auto;
+}
+
+.content p {
+    margin: 45px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 0.5rem;
+    color: white;
+}
+
+.content .overlay {
+    background-color: black;
+    opacity: 0.2;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.content img {
+    width: 700px;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+    opacity: 0.9;
+}
 /* Product */
 
-.list h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: darkslategray;
+.list {
     width: 700px;
     margin: auto;
+    background-color: wheat;
+}
+
+.list h2 {
+    background-color: white;
 }
 
 .products {
     width: 600px;
-    height: 550px;
+    height: 280px;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
     margin: auto;
 }
 
 .product {
-    width: 250px;
-    height: 250px;
-    margin: 10px 20px;
+    width: 130px;
+    height: 260px;
     background-position: center;
     background-size: cover;
 }
@@ -161,8 +203,8 @@ li a {
 .product .overlay {
     background-color: black;
     opacity: 0.2;
-    width: 250px;
-    height: 250px;
+    width: 130px;
+    height: 260px;
     position: absolute;
     z-index: 1;
 }
@@ -170,8 +212,8 @@ li a {
 .product h3 {
     font-size: 1.5rem;
     line-height: 2rem;
-    color: whitesmoke;
-    text-shadow: 2px 2px black;
+    color: white;
+    text-shadow: 0.2px 1px darksalmon;
     text-align: center;
     position: relative;
     z-index: 2;
