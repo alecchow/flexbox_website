@@ -25,4 +25,5 @@ This is an off-platform project (develop locally) for the Codecademy full-stack 
 * GitHub,
 * HTML,
 * Markdown,
-* Visual Studio Code
+* Visual Studio Code,
+* Unsplash
