@@ -16,6 +16,14 @@ h2 {
     margin: auto;
 }
 
+h3 {
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-align: right;
+    color: black;
+    margin-right: 50px;
+}
+
 /* Header */
 
 header {
@@ -270,12 +278,41 @@ li a {
 }
 
 .teammember h3 {
-    margin-top: 30px;
+    margin: 30px 70px 0 0;
     font-size: 1.5rem;
     color: salmon;
 }
 
 .teammember h4 {
     font-size: 1rem;
+    color: salmon;
+}
+
+/* Footer */
+
+.footer {
+    margin: auto;
+    width: 700px;
+    height: 130px;
+    background-color: rgb(235,235,235);
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Footer Menu */
+
+.bottommenu nav {
+    float: left;
+    margin-left: -50px;
+}
+
+/* Contact Us */
+
+.footer .textbox {
+    margin: -10px 0 0 0;
+    font-size: 0.8rem;
+    font-weight: 500;
     color: salmon;
 }
